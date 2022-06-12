@@ -2,7 +2,7 @@
 ///////////// Chapter 1. Data Loading //////////////
 var data_location = 'iris.data'
 var iris_data;
-d3.csv(data_location).then(function(data){
+d3.csv('iris.data').then(function(data){
   data.forEach(function(d){
     // convert string to number
     d.sepal_length = +d.sepal_length;
