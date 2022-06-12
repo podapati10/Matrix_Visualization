@@ -5,7 +5,7 @@ let innerWidth = width - margin.left - margin.right;
 let innerHeight = height - margin.top - margin.bottom;
 let yAxisLabel = 'Time(in seconds)', xAxisLabel = 'N-Value (Range: 16-2048)', title = 'Computation of Matrix Methods';
 
-d3.csv('/MatrixData.csv').then(function(data){
+d3.csv('MatrixData.csv').then(function(data){
   data.forEach(function(d){
     d.Time = +d.Time;
     d.Value = +d.Value;
