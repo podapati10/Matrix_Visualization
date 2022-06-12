@@ -1,6 +1,6 @@
 
 ///////////// Chapter 1. Data Loading //////////////
-var data_location = '/iris.data'
+var data_location = 'iris.data'
 var iris_data;
 d3.csv(data_location).then(function(data){
   data.forEach(function(d){
