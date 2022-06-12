@@ -145,7 +145,7 @@ legend.append("text")
 
 function myFunction()
 {
-  location.replace("Home.html")
+  location.replace("index.html")
 }
 
 ///////////////// Chapter 3. Brush /////////////////
