@@ -36,7 +36,7 @@ function load_svgs()
 
 function myFunction()
 {
-  location.replace("Home.html")
+  location.replace("index.html")
 }
 
 function Cal_AA()
