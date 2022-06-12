@@ -16,7 +16,7 @@ draw_lines(data);
 var svg = d3.select("#svg_chart").append("svg").attr("width", width).attr("height", height)
 function myFunction()
 {
-  location.replace("Home.html")
+  location.replace("index.html")
 }
 const draw_lines = d => {
 var svg_g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
