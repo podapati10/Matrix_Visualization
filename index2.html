@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix Visualisation</title>
+    <h3>Assignment 3</h3>
+    <h4>Ravi Kumar Podapati</h4>
+    <script src="Code/d3.min.js"></script>
+    <script src="Code/d3.js"></script>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+<body>
+
+    <div id="container">
+        <form id="svgForm">
+        <svg id="svg_A" stroke="black">
+        </svg>
+        <svg id="svg_B" stroke="black">
+        </svg>
+        <svg id="svg_C" stroke="black">
+        </svg>
+        </form>
+    </div>
+    <br>
+    <table align="center">
+        <tr>
+            <td>
+                <input class="state" type="radio" id="naive" name="mode" checked value="0" onclick="radioMode()">
+                <label class="label" for="naive">
+                <span class="text">Naive Method</span>
+              </label>
+            </td>
+            <td>
+          <input class="state" type="radio" id="trans" name="mode" value="0" onclick="radioMode()">
+            <label class="label" for="trans">
+                <span class="text">Transpose Method</span>
+              </label> 
+            </td>
+            <td>
+                <input class="state" type="radio" id="tile" name="mode" value="0" onclick="radioMode()">
+            <label class="label" for="tile">
+                <span class="text">Tiled Method</span>
+              </label>  
+            </td>
+        </tr>
+    </table>
+        <br>
+    <div>
+        <label class="label" for="sliderA">A :</label>
+        <input min=4 max=16 value=4 type="range" id="sliderA" name="Mode"  class="slrange">
+        <label class="label" for="sliderB">B :</label>
+        <input min=4 max=16 value=4 type="range" id="sliderB" name="Mode"  class="slrange">
+        <label class="label" for="sliderC">C :</label>
+        <input min=4 max=16 value=4 type="range" id="sliderC" name="Mode"  class="slrange">
+    </div>
+    <br>
+    <div>
+        <button class="btncls" onclick="btn_step()" id="btn_Step">Step</button>&nbsp;
+        <button class="btncls" onclick="btn_play()" id="btn_Play" value="Play">Play</button>&nbsp;
+        <button class="btncls" onclick="btn_reset()" id="btn_reset">Reset</button>&nbsp;
+    </div><br>
+    <div>
+        <button class="btnhome" id="btn_home" onclick="myFunction()">Home Page</button>
+    </div><br>
+    <div id="container1">
+        <form id="svgForm1">
+        <svg id="svg_AA" stroke="black" width="1300" height="50" style="border: 3px solid black;"></svg>
+        <br>
+        <svg id="svg_BB" stroke="black" width="1300" height="50" style="border: 3px solid black;"></svg>
+        <br>
+        <svg id="svg_CC" stroke="black" width="1300" height="50" style="border: 3px solid black;"></svg>
+        </form>
+    </div>
+    <script src="Code/CodeFile2.js"></script>
+</body>
+</html>

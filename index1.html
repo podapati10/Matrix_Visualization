@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 - Scatterplot Matrix</title>
+    <style>
+      svg {
+        background: white;
+      }
+      div {
+        text-align: center;
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+      circle.deselected {
+        fill: black;
+        border: 1px;
+      }
+      .label:hover .text {
+      opacity: 1;
+    }
+    .btnhome
+    {
+      color:#fff;
+      font-size: medium;
+      background: #808285;
+      padding: 15px;
+      border-radius: 5px;
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      box-shadow:
+          2px 2px 2px 0px #d1d9e6 inset,
+          -2px -2px 2px 0px #ffffff inset;
+    }
+    .btnhome:hover
+    {
+      color: tomato;
+      font-weight: bolder;
+      letter-spacing: 0.5px;
+      background: whitesmoke;
+      transition: all 0.2 ease 0s;
+      font-size: medium;
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+    }
+    </style>
+  </head>
+  <body>
+    <div name='headings'>
+      <h3> Scatterplot Matrix </h3>
+      <h5>Assignment 3</h5>
+      <h6>Ravi Kumar Podapati</h6>
+    </div>
+    <div id='svg_chart'></div>
+    <div>
+      <label class="label" for="btn_home">
+      <button class="btnhome" id="btn_home" onclick="myFunction()">Home Page</button>
+      </label>
+  </div>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="Code/CodeFile1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+  body {
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .line{
+    fill: none;
+    stroke-width: 5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    mix-blend-mode: multiply;
+  }
+  
+  text {
+    font-family: sans-serif;
+    font-size: 1.7em;
+  }
+  
+  .tick text {
+    font-size: 1.4rem;
+    fill: black;
+  }
+  
+  .tick line {
+    stroke: black;
+  }
+  
+  .axis-label {
+    font-size: 3em;
+    fill: rgb(129, 85, 49);
+  }
+  
+  .title {
+    font-size: 1.7em;
+    fill: #635F5D;
+  }
+  
+  .label:hover .text {
+    opacity: 1;
+  }
+  .btnhome
+  {
+    color:#fff;
+    font-size: medium;
+    background: #808285;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    box-shadow:
+        2px 2px 2px 0px #d1d9e6 inset,
+        -2px -2px 2px 0px #ffffff inset;
+  }
+  .btnhome:hover
+  {
+    color: tomato;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    background: whitesmoke;
+    transition: all 0.2 ease 0s;
+    font-size: medium;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+  }
